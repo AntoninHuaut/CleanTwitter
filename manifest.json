@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "CleanTwitter",
+    "description": "CleanTwitter",
+    "version": "1.0.0",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "128": "icon.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "*://twitter.com/*",
+        "*://api.twitter.com/2/timeline/conversation/*",
+        "*://api.twitter.com/2/guide*"
+    ]
+}
